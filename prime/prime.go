@@ -1,6 +1,6 @@
-package services
+package prime
 
-func IsPrime(n int) bool {
+func CheckPrime(n int) bool {
 	for i := 2; i < n; i++ {
 		if n%i == 0 {
 			return false

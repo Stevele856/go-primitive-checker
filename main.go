@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/prime-checker/services"
-	"github.com/prime-checker/utils"
+	"github.com/prime-checker/input"
+	"github.com/prime-checker/prime"
 )
 
 func main() {
@@ -15,13 +15,13 @@ func main() {
 	fmt.Println("============")
 
 	for {
-		value, err := utils.InputValue(scanner, "Enter value: ")
+		value, err := input.InputValue(scanner, "Enter value: ")
 		if err != nil {
 			fmt.Println("Error:", err)
 			continue
 		}
 
-		if services.IsPrime(value) {
+		if prime.CheckPrime(value) {
 			fmt.Println(value, "is a prime number")
 		} else {
 			fmt.Println(value, "is not a prime number")
