@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/prime-checker/input"
-	"github.com/prime-checker/prime"
+	prime "github.com/prime-checker/model"
+	input "github.com/prime-checker/view"
 )
 
 func main() {

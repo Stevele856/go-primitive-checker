@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/prime-checker/validator"
+	"github.com/prime-checker/controller"
 )
 
 func InputValue(scanner *bufio.Scanner, prompt string) (int, error) {
@@ -15,5 +15,5 @@ func InputValue(scanner *bufio.Scanner, prompt string) (int, error) {
 	}
 	input := strings.TrimSpace(scanner.Text())
 
-	return validator.Validate(input)
+	return controller.Validate(input)
 }
