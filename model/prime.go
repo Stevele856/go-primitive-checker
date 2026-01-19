@@ -1,4 +1,4 @@
-package prime
+package model
 
 func CheckPrime(n int) bool {
 	for i := 2; i < n; i++ {
